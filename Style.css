@@ -10,7 +10,9 @@ body{
 .container{
     height: 500px;
     display: flex;
-    justify-content:center ; 
+    flex-wrap: wrap;
+    background-color: aquamarine;
+    /* justify-content:center ;  */
     align-items: center;
     justify-content: space-between;
     gap: 10px;
@@ -41,4 +43,12 @@ body{
     border-radius: 10px;
     background: linear-gradient(to right, rgb(119, 0, 255) 0% , orange 100%);
 }
-
+@media (max-width: 640px) {
+    body{
+        height: 100vh;
+        background:linear-gradient(to top, red, green);
+    }
+    .container{
+        display: none;
+    }
+}
